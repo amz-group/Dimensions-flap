@@ -520,10 +520,11 @@ function draw() {
             ctx.shadowBlur = 10;
             ctx.shadowColor = colors.textMain;
         }
-        ctx.fillText("DIMENSION FLAP<br>CREATED BY: AMZ GROUP", canvas.width / 2, 200);
+        ctx.fillText("DIMENSION FLAP", canvas.width / 2, 200);
+       ctx.fillText("CREATED BY: AMZ GROUP", canvas.width / 2, 200);
         ctx.shadowBlur = 0;
-        if (!colors.glow) ctx.strokeText("DIMENSION FLAP<br>CREATED BY: AMZ GROUP", canvas.width / 2, 200);
-
+        if (!colors.glow) ctx.strokeText("DIMENSION FLAP", canvas.width / 2, 200);
+ctx.strokeText("CREATED BY: AMZ GROUP", canvas.width / 2, 200);
     } else if (state.current == state.over) {
         ctx.fillStyle = colors.glow ? "#ff0055" : "#e74c3c";
         ctx.textAlign = "center";
@@ -559,4 +560,5 @@ function loop() {
 
 
 loop();
+
 
