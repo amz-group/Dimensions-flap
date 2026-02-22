@@ -79,7 +79,18 @@ canvas {
     /* Added transition for smooth appearance */
     transition: opacity 0.3s;
 }
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 
+.my-name{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    color: white;
+    padding: 15px 0;
+}
 #theme-btn:hover {
     background: #fff;
     color: #000;
@@ -97,4 +108,5 @@ canvas {
     100% {
         opacity: 0.8;
     }
+
 }
