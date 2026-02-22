@@ -520,9 +520,9 @@ function draw() {
             ctx.shadowBlur = 10;
             ctx.shadowColor = colors.textMain;
         }
-        ctx.fillText("AMZ GROUP", canvas.width / 2, 200);
+        ctx.fillText("DIMENSIONS FLAP", canvas.width / 2, 200);
         ctx.shadowBlur = 0;
-        if (!colors.glow) ctx.strokeText("AMZ GROUP", canvas.width / 2, 200);
+        if (!colors.glow) ctx.strokeText("DIMENSIONS FLAP", canvas.width / 2, 200);
 
     } else if (state.current == state.over) {
         ctx.fillStyle = colors.glow ? "#ff0055" : "#e74c3c";
@@ -545,6 +545,21 @@ function draw() {
         }
     }
     ctx.textAlign = "start";
+score.draw();
+
+ctx.fillStyle = colors.textMain;
+ctx.font = "10px 'Press Start 2P'";
+ctx.textAlign = "center";
+
+if (colors.glow) {
+    ctx.shadowBlur = 10;
+    ctx.shadowColor = colors.textShadow;
+}
+
+ctx.fillText("AMZ GROUP", canvas.width / 2, 40);
+
+ctx.shadowBlur = 0;
+ctx.textAlign = "start";
 
     ctx.restore();
 }
@@ -559,4 +574,5 @@ function loop() {
 
 
 loop();
+
 
