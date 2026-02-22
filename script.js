@@ -454,8 +454,8 @@ const score = {
 
         } else if (state.current == state.over) {
             ctx.fillStyle = colors.glow ? "rgba(0,0,0,0.8)" : "#ded895";
-            ctx.fillRect(canvas.width / 2 - 100, 160, 200, 120);
-            ctx.strokeRect(canvas.width / 2 - 100, 160, 200, 120);
+            ctx.fillRect(canvas.width / 2 - 150, 140, 300, 180);
+ctx.strokeRect(canvas.width / 2 - 150, 140, 300, 180);
 
             ctx.fillStyle = colors.glow ? "#fff" : "#e67e22";
             ctx.textAlign = "center";
@@ -559,3 +559,4 @@ function loop() {
 
 
 loop();
+
