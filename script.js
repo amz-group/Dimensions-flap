@@ -454,9 +454,15 @@ const score = {
 
         } else if (state.current == state.over) {
             ctx.fillStyle = colors.glow ? "rgba(0,0,0,0.8)" : "#ded895";
-            ctx.fillRect(canvas.width / 2 - 150, 140, 300, 180);
-ctx.strokeRect(canvas.width / 2 - 150, 140, 300, 180);
+            let boxWidth = canvas.width * 0.9;
+let boxHeight = canvas.height * 0.8;
 
+let boxX = canvas.width / 2 - boxWidth / 2;
+let boxY = canvas.height / 2 - boxHeight / 2;
+
+ctx.fillRect(boxX, boxY, boxWidth, boxHeight);
+ctx.strokeRect(boxX, boxY, boxWidth, boxHeight);
+            
             ctx.fillStyle = colors.glow ? "#fff" : "#e67e22";
             ctx.textAlign = "center";
             ctx.font = "15px 'Press Start 2P'";
@@ -560,6 +566,7 @@ function loop() {
 
 
 loop();
+
 
 
 
